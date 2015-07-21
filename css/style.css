@@ -27,20 +27,24 @@ header {
 	background-image: url(../images/header-bg.jpg);
 	min-height: 800px;
 	position: relative;
+	background-size: cover;
 
 }
 
 /* Logo */
 .logo {
-	margin: 50px 0 0 65px;
+	margin-top: 50px;
 	float: left;
 }
 
 /* Menu */
 .menu {
-	float: right;
 	background: #281f2e;
+	position: fixed;
+	right: 0;
 	text-align: center;
+	z-index: 99999;
+	display: none;
 }
 
 .menu li {
@@ -122,10 +126,10 @@ header {
 
 .header{
 	background: #372b40;
-	bottom: 0;
+	top: 602px;
 	color: #fff;
 	font-size: 14px;
-	left: 60px;
+	left: 0;
 	line-height: 1.5;
 	max-width: 370px;
 	padding: 5px 15px 25px 25px;
@@ -148,10 +152,10 @@ header {
 
 /* Get Started Button*/
 .get-started-wrapper {
-	bottom: 40px;
+	top: 695px;
 	color: #fff;
 	position: absolute;
- 	right: 65px;
+ 	right: 20px;
 }
 
 .get-started-wrapper h3 {
@@ -196,13 +200,16 @@ header {
 
 .services-title h1,
 .title-about-us h1,
-.our-work-title h1 {
+.our-work-title h1,
+.contact-title h1 {
 	font-size: 30px;
+	margin: 0;
 }
 
 .services-title h1:after,
 .title-about-us h1:after,
-.our-work-title h1:after {
+.our-work-title h1:after,
+.contact-title h1:after {
 	background: url(../images/title-border.png);
 	clear: both;
 	content: "";
@@ -256,7 +263,8 @@ header {
 }
 
 .title-about-us,
-.our-work-title {
+.our-work-title,
+.contact-title {
 	color: #fff;
 	font-size: 14px;
 	margin-bottom: 85px;
@@ -266,6 +274,8 @@ header {
 .wrapper {
 	margin: 0 auto;
 	max-width: 1170px;
+	padding: 0 15px;
+	position: relative;
 }
 
 .about-us-content {
@@ -293,18 +303,40 @@ header {
 }
 
 .team-item {
-	background: #281f2e;
+	background: #312638;
+	box-sizing: border-box;
 	float: left;
-	width: 370px;
+	padding: 0 15px;
+	width: 33%;
+	min-width: 240px;
+	/*margin: 0 -15px;*/
 }
 
-.team-item:nth-child(3) {
-	margin: 0 30px;
+.team-item-bg {
+	background: #281f2e;
+	padding-top: 20px;
 }
+
 
 .img-team {
-	margin: 40px 0 20px 90px;
+	display: block;
+	height: 180px;
+	width: 180px;
+	margin: 40px auto 20px;
 }
+
+ .left {
+	background-image: url(../images/john-doe.png);
+}
+
+.center {
+	background-image: url(../images/jane-de-sign.png);
+}
+
+.right {
+	background-image: url(../images/lord-devel.png);
+}
+
 
 .info-title {
 	color: #fff;
@@ -332,8 +364,7 @@ header {
 	margin: 10px 0;
 }
 
-.team-item-social-icons-wrapper a:nth-child(2),
-#our-work div:nth-child(3) {
+.team-item-social-icons-wrapper a:nth-child(2) {
 	margin: 0 30px;
 }
 
@@ -350,10 +381,20 @@ header {
 }
 
 .work-item {
-	background: #fff;
+	background: #372B40;
+	box-sizing: border-box;
 	float: left;
 	margin-bottom: 150px;
-	width: 370px;
+	padding: 0 15px;
+	width: 33%;
+}
+
+.work-item-bg {
+	background-color: #fff;
+}
+
+.img-work {
+	max-width: 100%;
 }
 
 .work-name {
@@ -376,10 +417,11 @@ header {
 	bottom: 40px;
 	color: #fff;
 	position: absolute;
-	right: 65px;
+	right: 0;
  }
 
-.load-more {
+.load-more,
+.submit {
 	background: #a33435;
 	color: #fff;
 	display: block;
@@ -388,4 +430,93 @@ header {
 	text-decoration: none;
 }
 
+/* Contact section */
 
+.contact-form {
+	background: #3d3047 url(../images/contact-bg.jpg);
+	padding-bottom: 140px;
+	background-size: cover;
+}
+
+
+.input-wrapper{
+	float: left;
+	max-width: 565px;
+	padding-right: 36px;
+}
+
+.input-wrapper:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.input {
+	border: 3px solid #372b40;
+	box-sizing: border-box;
+	float: left;
+	max-width: 565px;
+	outline: none;
+	padding: 12px;
+	width: 100%;
+}
+.input:nth-child(2) {
+	margin: 27px 0;
+}
+
+.textarea-wrapper {
+	display: inline-block;
+	width: 100%;
+	max-width: 565px;
+}
+
+ textarea {
+	border: 3px solid #372b40;
+	display: inline-block;
+	max-width: 525px;
+	outline: none;
+	padding: 12px 17px;
+	position: relative;
+	resize: none;
+	width: 100%;
+ }
+
+ .submit {
+ 	border: none;
+ 	float: right;
+ 	margin-bottom: 50px;
+ 	margin-top: 30px;
+ 	padding: 13px 30px;
+ }
+
+ .submit img {
+ 	padding-right: 10px;
+ }
+
+/* Footer */
+ footer {
+ 	background: #281f2e;
+ }
+
+.copyring {
+	float: left;
+	color: #fff;
+	font-size: 14px;
+	padding: 30px 0;
+}
+
+.social {
+	list-style: none;
+	float: right;
+	padding: 26px 0;
+ }
+
+.social li {
+	float: left;
+}
+
+.twitter,
+.facebook,
+.dribbble {
+	padding-right: 10px;
+}
