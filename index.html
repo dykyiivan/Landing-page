@@ -5,6 +5,7 @@
 	<title>Landing Page</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='http://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/font-awesome.css">
 </head>
@@ -16,11 +17,11 @@
 				<a href="index.html"><img src="images/logo.png" alt="Логотип"></a>
 			</div>
 			<ul class="menu">
-				<li><a href="index.html" class="home"><i class="fa fa-home fa-2x"></i>Home</a></li>
-				<li><a href="#services" class="services"><i class="fa fa-pencil fa-2x"></i>Services</a></li>
-				<li><a href="#about-us" class="about"><i class="fa fa-user fa-2x"></i>About</a></li>
-				<li><a href="#our-work" class="work"><i class="fa fa-folder-open fa-2x"></i>Work</a></li>
-				<li><a href="#contact-form" class="contact"><i class="fa fa-comment fa-2x"></i>Contact</a></li>
+				<li><a href="index.html"><i class="fa fa-home fa-2x"></i>Home</a></li>
+				<li><a href="#services"><i class="fa fa-pencil fa-2x"></i>Services</a></li>
+				<li><a href="#about-us"><i class="fa fa-user fa-2x"></i>About</a></li>
+				<li><a href="#our-work"><i class="fa fa-folder-open fa-2x"></i>Work</a></li>
+				<li><a href="#contact-form"><i class="fa fa-comment fa-2x"></i>Contact</a></li>
 			</ul>
 			<div class="get-started-wrapper">
 				<h3>We've got what you need!</h3>
@@ -33,7 +34,7 @@
 			</div>
 		</div>
 	</header>
-	<section id="services">
+	<section id="services" class="services">
 	<div class="wrapper">
 			<section class="services-title">
 				<h1>Services</h1>
@@ -58,7 +59,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="about-us">
+	<section id="about-us" class="about-us">
 		<div class="wrapper">
 			<section class="title-about-us">
 				<h1>About us</h1>
@@ -70,44 +71,46 @@
 			</article>
 			<section class="team">
 				<h2 class="our-team-title">OUR AMAZING TEAM</h2>
-				<div class="team-item">
-					<div class="team-item-bg">
-						<a href="#" class="img-team left"></a>
-						<p class="info-title">JOHN DOE</p>
-						<p class="info-title-type">CEO</p>
-						<div class="team-item-social-icons">
-							<div class="team-item-social-icons-wrapper">
-								<a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-								<a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-								<a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+				<div class="row">
+					<div class="team-item">
+						<div class="team-item-bg">
+							<a href="#" class="img-team left"></a>
+							<p class="info-title">JOHN DOE</p>
+							<p class="info-title-type">CEO</p>
+							<div class="team-item-social-icons">
+								<div class="team-item-social-icons-wrapper">
+									<a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+									<a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+									<a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="team-item">
-					<div class="team-item-bg">
-						<a href="#" class="img-team center"></a>
-						<p class="info-title">JANE DE SIGN</p>
-						<p class="info-title-type">DESIGNER</p>
-						<div class="team-item-social-icons">
-							<div class="team-item-social-icons-wrapper">
-								<a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-								<a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-								<a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+					<div class="team-item">
+						<div class="team-item-bg">
+							<a href="#" class="img-team center"></a>
+							<p class="info-title">JANE DE SIGN</p>
+							<p class="info-title-type">DESIGNER</p>
+							<div class="team-item-social-icons">
+								<div class="team-item-social-icons-wrapper">
+									<a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+									<a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+									<a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="team-item">
-					<div class="team-item-bg">
-						<a href="#" class="img-team right"></a>
-						<p class="info-title">LORD DEVEL</p>
-						<p class="info-title-type">DEVELOPER</p>
-						<div class="team-item-social-icons">
-							<div class="team-item-social-icons-wrapper">
-								<a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-								<a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-								<a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+					<div class="team-item">
+						<div class="team-item-bg">
+							<a href="#" class="img-team right"></a>
+							<p class="info-title">LORD DEVEL</p>
+							<p class="info-title-type">DEVELOPER</p>
+							<div class="team-item-social-icons">
+								<div class="team-item-social-icons-wrapper">
+									<a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+									<a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+									<a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -115,43 +118,45 @@
 			</section>
 		</div>
 	</section>
-	<section id="our-work">
+	<section id="our-work" class="our-work">
 		<div class="wrapper">
 			<section class="our-work-title">
 				<h1>Our Work</h1>
 				<p>Lorem ipsum dolor sit amet consectetur.</p>
 			</section>
-			<div class="work-item">
+				<div class="row">
+				<div class="work-item">
+					<div class="work-item-bg">
+						<a href="#">
+							<img src="images/img-1.jpg" alt="Img-1" class="img-work">
+						</a>
+						<p class="work-name">Lorem Ipsum Dolor</p>
+						<p class="work-type">Web Design</p>
+					</div>
+				</div>
+				<div class="work-item">
+					<div class="work-item-bg">
+						<a href="#">
+							<img src="images/img-2.jpg" alt="Img-2" class="img-work">
+						</a>
+						<p class="work-name">Lorem Ipsum Dolor</p>
+						<p class="work-type">Web Design</p>
+					</div>
+				</div>
+				<div class="work-item">
 				<div class="work-item-bg">
-					<a href="#">
-						<img src="images/img-1.jpg" alt="Img-1" class="img-work">
-					</a>
-					<p class="work-name">Lorem Ipsum Dolor</p>
-					<p class="work-type">Web Design</p>
+						<a href="#">
+							<img src="images/img-3.jpg" alt="Img-3" class="img-work">
+						</a>
+						<p class="work-name">Lorem Ipsum Dolor</p>
+						<p class="work-type">Web Design</p>
+					</div>
 				</div>
-			</div>
-			<div class="work-item">
-				<div class="work-item-bg">
-					<a href="#">
-						<img src="images/img-2.jpg" alt="Img-2" class="img-work">
-					</a>
-					<p class="work-name">Lorem Ipsum Dolor</p>
-					<p class="work-type">Web Design</p>
+				<div class="load-more-wrapper">
+					<a href="#" class="load-more">Load More<img src="images/more-btn.png" class="load-more-btn" alt="Get started button"></a>
 				</div>
-			</div>
-			<div class="work-item">
-			<div class="work-item-bg">
-					<a href="#">
-						<img src="images/img-3.jpg" alt="Img-3" class="img-work">
-					</a>
-					<p class="work-name">Lorem Ipsum Dolor</p>
-					<p class="work-type">Web Design</p>
-				</div>
-			</div>
-			<div class="load-more-wrapper">
-				<a href="#" class="load-more">Load More<img src="images/more-btn.png" class="load-more-btn" alt="Get started button"></a>
-			</div>
-		</div>	
+			</div>	
+		</div>
 	</section>
 	<section id="contact-form" class="contact-form">
 		<div class="wrapper">
@@ -161,13 +166,13 @@
 			</section>
 			<form action="#">
 				<div class="input-wrapper">
-					<input type="text" placeholder="Your Name*" class="input">
-					<input type="email" placeholder="Your Email*" class="input">
-					<input type="text" placeholder="Subject*" class="input">
+					<input type="text" placeholder="Your Name*" class="input" tabindex="1"><br>
+					<input type="email" placeholder="Your Email*" class="input" tabindex="2"><br>
+					<input type="text" placeholder="Subject*" class="input" tabindex="3">
 				</div>
 				<div class="textarea-wrapper">
-					<textarea name="#" id="#" cols="30" rows="9" placeholder="Message*"></textarea>
-					<button value="Send Message" class="submit"><img src="images/submit-btn.png" alt="Image">Send Message</button>
+					<textarea name="#" id="#" cols="30" rows="9" tabindex="4" placeholder="Message*"></textarea>
+					<button value="Send Message" class="submit" tabindex="5"><img src="images/submit-btn.png" alt="Image">Send Message</button>
 				</div>
 			</form>
 		</div>
