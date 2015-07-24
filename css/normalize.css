@@ -397,7 +397,7 @@ legend {
  */
 
 textarea {
-  overflow: auto;
+  overflow: hidden;
 }
 
 /**
