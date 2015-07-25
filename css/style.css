@@ -43,7 +43,9 @@ header {
 
 @media (max-width: 680px) {
 	.logo {
-		margin: 50px 0 0 20%;
+		left: 25%;
+		position: absolute;
+		top: 50px;
 	}
 }
 
@@ -54,7 +56,14 @@ header {
 	right: 0;
 	text-align: center;
 	z-index: 99999;
-	display: none;
+}
+
+@media (max-width: 480px) {
+	.menu {
+		position: relative;
+		width: 100%;
+		display: none;
+	}
 }
 
 .menu li {
@@ -69,11 +78,50 @@ header {
 	display: block;
 }
 
+@media (max-width: 480px) {
+	.menu li a  {
+		font-size: 14px;
+	}
+}
+
 .menu li a:hover {
 	background: #2e2436;
 	transition: all 0.3s ease 0.2s;
 }
 
+/* Menu for small diveces */
+.global-nav-wrapper {
+	position: relative;
+	background: #281f2e;
+	min-height: 50px;
+	display: none;
+}
+
+@media (max-width: 480px) {
+	.global-nav-wrapper  {
+		display: block;
+	}
+}
+
+.nav-btn {
+	position: absolute;
+	right: 20px;
+	top: 5px;
+	z-index: 5;
+	display: none;
+}
+
+@media (max-width: 480px) {
+	.nav-btn {
+		display: block;
+		padding: 10px;
+	}
+}
+
+.nav-btn:hover {
+	background-color: green;
+}
+/* End menu for small diveces */
 .header{
 	background: #372b40;
 	top: 602px;
@@ -120,7 +168,7 @@ header {
 	.get-started-wrapper {
 		left: 22%;
 		position: relative;
-		top: 520px;
+		top: 660px;
 		width: 203px;
 	}
 }
