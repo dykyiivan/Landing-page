@@ -81,6 +81,7 @@ header {
 @media (max-width: 480px) {
 	.menu li a  {
 		font-size: 14px;
+		text-align: left;
 	}
 }
 
@@ -119,8 +120,13 @@ header {
 }
 
 .nav-btn:hover {
-	background-color: green;
+	background-color: green;  /*Поставив тимчасово, щоб краще виділялось*/
 }
+
+.nav-btn:hover ul.menu {
+	display: block;
+}
+
 /* End menu for small diveces */
 .header{
 	background: #372b40;
